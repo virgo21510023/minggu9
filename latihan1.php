@@ -1,13 +1,8 @@
 <?php
 
-$angka = 10;
-function Angka (){
-	$angka = 20;
-	echo $angka;
-}
+$_GET["nama"] = "Virgo";
+$_GET["NIM"] = "21510023";
 
-echo $angka;
-echo "<br>";
-Angka();
+var_dump($_GET);
 
 ?>
