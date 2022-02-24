@@ -6,17 +6,17 @@ $books = [
 	"year" => "1996", 
 	"gambar" => "buku1.jpg"],
 	
-	["title" => "The Crown Conspiracy (The Riyria Revelations, #1)", 
+	["title" => "The Crown Conspiracy (The Riyria Revelations 1)", 
 	"authors" => "Michael J. Sullivan", 
 	"year" => "2008", 
 	"gambar" => "buku2.jpg"],
 	
-	["title" => "Waking Up Married (Waking Up, #1)", 
+	["title" => "Waking Up Married (Waking Up 1)", 
 	"authors" => "Mira Lyn Kelly", 
 	"year" => "2012", 
 	"gambar" => "buku3.jpg"],
 	
-	["title" => "The Reckoning (Darkest Powers, #3)", 
+	["title" => "The Reckoning (Darkest Powers 3)", 
 	"authors" => "Kelley Armstrong", 
 	"year" => "2010", 
 	"gambar" => "buku4.jpg"],
@@ -38,10 +38,14 @@ $books = [
 </head>
 <body>
 <h3>Daftar Buku</h3>
-<?php foreach ($books as $book): ?>
 <ul>
-	<li><?= $book["title"]; ?></li>
-</ul>
+<?php foreach ($books as $book): ?>
+	<li>
+		<a href="latihan2.php?title=<?= $book["title"]; ?>&authors=<?= $book["authors"] ;?>&year=<?= $book["year"] ;?>&gambar=<?= $book["gambar"] ;?>">
+		<?= $book["title"]; ?>
+		</a>
+	</li>
 <?php endforeach; ?>
+</ul>
 </body>
 </html>
