@@ -2,9 +2,12 @@
 
 $angka = 10;
 function Angka (){
-	echo $angka;	
+	$angka = 20;
+	echo $angka;
 }
 
 echo $angka;
+echo "<br>";
+Angka();
 
 ?>
