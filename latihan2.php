@@ -1,3 +1,10 @@
+<?php
+
+if (!isset($_GET["title"])){
+	header("location: latihan1.php");
+	exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
